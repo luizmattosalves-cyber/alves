@@ -1,18 +1,87 @@
-
-
 <!DOCTYPE html>
-
 <html lang="pt-br">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>loja</title>
+<title>LA Auto Center</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-LA Auto Center
-Vou compatilhar alguns carros da minha loja que estão a venda
 
-  Meu primeiro post
-  Boas-vindas a minha nova loja
+<header>
+    <h1>LA Auto Center</h1>
+    <nav>
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('catalogo')">Catálogo</button>
+        <button onclick="showPage('sobre')">Sobre</button>
+        <button onclick="showPage('contato')">Contato</button>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section id="home" class="page active">
+    <div class="hero">
+        <h2>Carros de luxo exclusivos para você</h2>
+    </div>
+</section>
+
+<!-- CATÁLOGO -->
+<section id="catalogo" class="page">
+
+    <div class="container">
+        <h2>Catálogo</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=800&q=80">
+                <h3>Ferrari Roma</h3>
+                <p>R$ 2.200.000</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a?auto=format&fit=crop&w=800&q=80">
+                <h3>Lamborghini Urus</h3>
+                <p>R$ 3.500.000</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6d6?auto=format&fit=crop&w=800&q=80">
+                <h3>Mercedes Maybach S680</h3>
+                <p>R$ 1.800.000</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1616788494707-ec28f08d05c2?auto=format&fit=crop&w=800&q=80">
+                <h3>Porsche 911 Turbo S</h3>
+                <p>R$ 1.300.000</p>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="page">
+    <div class="container">
+        <h2>Sobre a LA Auto Center</h2>
+        <p>Especialistas em veículos de luxo com atendimento premium e modelos exclusivos do mercado mundial.</p>
+    </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="page">
+    <div class="container">
+        <h2>Contato</h2>
+
+        <input type="text" placeholder="Seu nome">
+        <input type="email" placeholder="Seu e-mail">
+        <textarea placeholder="Mensagem"></textarea>
+        <button>Enviar</button>
+    </div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
